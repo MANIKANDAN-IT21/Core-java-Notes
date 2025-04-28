@@ -1,5 +1,8 @@
 Access Modifiers in Java
-Access modifiers in Java are used to control the accessibility or visibility of classes, methods, and variables. They play a crucial role in maintaining security and encapsulation within applications.
+-Access modifiers in Java are used to control the accessibility or visibility of classes, methods, and variables. They play a crucial role in maintaining security and encapsulation within applications.
+
+what is access modifier?
+Access Modifiers in Java control the visibility and accessibility of classes, methods, and variables, ensuring better security and encapsulation.
 
 Types of Access Modifiers
 There are 4 types of access modifiers available in Java:
