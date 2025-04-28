@@ -1,0 +1,81 @@
+Exception Handling
+----------------------------------------------
+what is exception handling?
+Exception handling in Java allows developers to manage runtime errors effectively by using mechanisms like try-catch block, finally block, throwing Exceptions, Custom Exception handling, etc.
+without error handing what happen?
+Problems without exception handling:
+1)Abnormal Termination
+2)System defined error messages
+problems with exception handling?
+1)normal Termination
+2)user friendly error messages
+---------------------------------------------------
+what are the type of error?
+1. compilation error
+2. run time error
+what is compilation error?
+-->the program thow the error during compilation
+Occurs before the program runs — during compilation.
+-->Caused by syntax mistakes, missing files, wrong data types, etc.
+eg
+int a="hello";
+what is run time error?
+Occur during program execution
+Occurs after the program has successfully compiled and is running.
+Often caused by bad input, logic errors, or illegal operations.
+eg
+Division by zero
+Null pointer access
+int a=10/0 this is arihmetric exception
+
+-----------------------------------------------------
+Types of Exceptions
+===================
+We have 3 types of exceptions
+
+1. Checked Exception-Checked exceptions are checked at compile-time.
+*FileNotFoundException
+*ClassNotFoundExceptionA
+
+2. Unchecked Exception--unChecked exceptions are checked at run-time.
+*NullPointerException
+*ArrayIndexOutOfBoundsException
+
+3. Error-Computer system do not have enough memory to handle the Java
+processing can give OutOfMemoryError.
+
+what is error
+Usually unrecoverable
+error came from outside the control of the program.and caused by issues in the Java Virtual Machine (JVM) or system resource.
+OutOfMemoryError-Not enough memory to run the program
+------------------------------------------------------------
+ok!how to manage or controll the errors?
+in this concept we have try,catch,finally,throw,throws
+what is try & catch block?
+The code inside the try block is executed, and if any exception occurs, it is then caught by the catch block.
+We can use multiple catch block with a single try.
+try -->error code
+
+catch -->handling code
+
+what is finally
+Java finally block can be used to execute important code such as closing connection,
+piece of code is always executed whether an exception occurs or not.
+Always executed after try-catch block.
+finally -->cleanup code
+
+what is throw?
+Java throw keyword is used to explicitly throw an exception.
+The throw keyword is mainly used to throw custom exceptions. 
+Throw is followed by an instance.n
+Throw is used within the method.
+Multiple exception cannot be thrown.
+throw   -->to throw an error explicitly
+
+what is throws?
+throws  -->info to the caller/Informs the caller that this method might throw an exception
+Java throws keyword is used to declare an exception.
+Throws is used with the method signature.
+Throws is followed by class.
+Throws can declare multiple exceptions
+-  Checked exception can be propagated with throws.
