@@ -1,0 +1,139 @@
+Basic Java
+=========
+what is Java? 
+Java is a high-level, platform-independent (Write Once, Run Anywhere – WORA), object-oriented, robust, and secure programming language. It also features automatic memory management through garbage collection. Java was developed by James Gosling at Sun Microsystems in 1995, and it was later acquired by Oracle Corporation.
+
+Key Features of Java
+====================
+->platform independent(JVM)
+ This byte code can run on any platform be it Windows, Linux, or macOS which means if we compile a program on Windows, then we can run it on Linux and vice versa. 
+->object-oriented programming language(oops)
+->secure & simplicity(simple syntax)
+->Distributed(Editions)
+->Multithreading
+
+What is Java Editions?
+======================
+Java is offered in different editions, we can create the type of application like(Application, Desktop, Web Application)
+1. Java Standard Edition (JSE)
+	* Focuses on core Java concepts like corejava, AWT, Swing, Applets, and JDBC.
+	* Suitable for desktop/standalone applications.
+2. Java Enterprise Edition (JEE)
+	* Focuses on Servlets, JSP, Spring, and Spring Boot.
+	* Suitable for Web applications.
+3. Java Micro Edition (JME)
+	* Focuses on kotlin, gradle.
+	* Suitable for Mobile Application.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+For compilation: javac filename.java
+For execution: java classname
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+How Java Code Executes?
+-----------------------
+.java(source code) into compile into .class file with help of compiler then .class file loaded into to jvm. jvm execute the .class into execute code.
+.java->(compiler)->.class->(JVM)->execute code.
+
+What is JVM?-Convert bytecode into native machine code
+Ans: JVM architecture.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Java Development Kit(JDK)
+=========================
+JDK have collection of tools and libraries necessary for run our Java program or application.(development tools(A compiler-javac)(jar)+lib)
+JDK->JRE->JVM
+
+Java Runtime Environment(JRE)=Provides environment to run Java apps
+============================
+JRE is help to run our java program in oru local machine and JRE have collection of JVM + class lib(java.lang, java.util)
+- Java source code is compiled and converted to Java bytecode. If you want to run this bytecode on any platform, you need JRE.
+JRE->JVM->JIT
+
+Java Virtual machine(JVM)/JIT
+=============================
+JVM-Already told. JIT is a part of the JVM that optimizes the performance of the application.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Java is compiled and interpreted?
+-===============================
+Java is both compiled and interpreted
+->Compilation (Java Compiler - javac)
+->Interpretation (JVM - Java Virtual Machine)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Datatypes
+=========
+what is DataType?
+in java datatype defines the type of data a variable can hold. It acts like a container that stores only a specific kind of value—such as numbers, characters, or true/false.
+
+There area two types of datatype
+	->primitive datatype(we can only store single data)
+	->non-primitive datatype(we can store group of object)
+primitive datatype(8)->byte,short,int,long,float,double,char,boolean
+non-primitive datatype->string,object,array,class
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Variables
+=========
+what is variables?
+Variables is give name to the data is called variable.(variable is a place holder/container/name of memory location)
+Eg: int a=10;//a is a variable. so here variable hold some data 
+
+Types of Java Variables
+-----------------------
+	->global Variables->instance, static variable 
+	->Local Variables
+
+Local Variables
+---------------
+A variable defined within a block or method or constructor is called a local variable.
+
+Instance Variables
+------------------
+->Variables which are Declared inside a class, but outside methods as called Instance variable.
+->instance properties will get memory when object create.
+->instance properties access by object reference.
+->instance variables are used for unique data like phone, email, Aadhar
+->instance variable is also called as object variable.
+
+static Variables
+------------------
+->variable with static keyword which declared inside a class, but outside methods as called static variable
+->static properties will get memory at once when classloading into jvm.
+->static properties access by class name.
+->static variables are used for commom data like schname,orgname
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Identifier
+=========
+whatever name in class,variable,interface,method is called Identifier
+In java have set of rules
+	->name must start with a-z, A-Z,_, $
+	->not start with number
+	->not start with any special character
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+how many java keywords?
+Reserved word(53)->keywords(50)->usedkeyword(48)->Un-usedKeyword(2)+ reserved literal(3)->true,false,null
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Java naming conversation
+========================
+	->class and interface name should start with Uppercase
+	->variable name should be without space & start with lowercase it not mantory but recommend.
+	->method name should be without white space & start with lowercase it not mantory but recommend.
+	->package name start with lowercase.
+	->constant variable name full uppercase, Ex: int MIN_VALUES=21;
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Types of Operators in Java
+==========================
+Arithmetic Operators(/,-,+,%)
+Unary Operators(++,--,!)
+Assignment Operator(=,/=,+=,-=)
+Relational Operators(<,>,==,!=,<=)
+Logical Operators(&&,||,!)
+Ternary Operator(: :)
+Bitwise Operators(&,|,^)
+Shift Operators(<<,>>,>>>)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+what is control statement?
+For example i have an array it contain n number element! i want to execute that all element. so here we need flow control.
+in flow control! user want i don't want n number element! just want first 5 or last 5! soo we can modify logic in flow control
+
+							control statement
+								|
+selected statement(if-else)-nested,if-else-if,(switch)-switch	iterative(for,for-each,while,do-while)	Jumping statement(break,return,continue)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
