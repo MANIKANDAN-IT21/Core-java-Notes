@@ -1,0 +1,31 @@
+String(java.lang)
+======
+->String is predefined class and also it is type of Object
+->In string we can store the group of character enclosed by double quotes
+->string is immutable. it means once string object is created it cannot be changed.
+->
+->we create the string object in 2ways
+	1)String literals// String name="mani"
+	2)By new Keywrd//String name=new String("manikandan");
+here,
+String literal is immutable.
+String by new keyword is mutabe
+
+Why String is Immutable?
+========================
+String have Contant pool concept!
+String constant pool is a special area that is used for storing string objects.
+-> Whenever we create a string literal in Java, JVM checks string constant pool first. If the 
+string already exists in string constant pool, no new string object will be created in the string 
+pool by JVM.
+-> If the string already exists in the pool, JVM does not create a new object. Instead, it returns a reference to the existing string.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+StringBuffer(java.lang)
+============
+->StringBuffer is a peer class of String, it is mutable in nature and it is thread safe class
+->StringBuffer is similar to String both are used to create the string ,but StringBufer object can changed
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+StringBuilder(java.lang)
+=============
+StringBuilder and Stringbuilder both are same and used for create the String but Stringbuilder is non-sychronized which mean Not thread safe.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
