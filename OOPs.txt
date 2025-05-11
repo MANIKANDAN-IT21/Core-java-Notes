@@ -1,0 +1,82 @@
+What is OOPs in Java?
+-->Opps is methodology to design a program using class and object. it simplifier the software development and maintenance.
+-->opps is used for solving the complex program, which means
+-->In oops we have Four pillars
+-Abstraction(HISND)
+-Encapsulation(Security)
+-Inheritance(Access one class to another)
+-polymorphism(performance)
+
+What is Class?
+	class is a blueprint or template of object to define structure and behavior.
+	class is a collection of data members(variables) and member functions(methods)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is Object?
+	object is a instance of a class		
+	Object is runtime entity and it has structure and properties. 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is Constructor?
+	Constructor in java is special method used to initialize an object, 
+there are three type of constructor,
+->No argument Constructor
+->parameter constructor
+->default constructor 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is method in java?
+	In java a method like a function which is used to expose the behavior of object
+->code optimize
+->code reusability
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is abstraction?
+	->Abstraction is hiding the implementation of code and show the necessary data to the user.
+	->In java Abstraction achieved by interface and abstract class.
+What is abstract class?
+	->a class declared with abstract keyword is called abstract class
+	->abstract class is combination of concrete method and abstract method!
+	->we can't create the object for abstract class
+	->abstraction not provide 100% abstraction because it have concrete method.
+What is abstract method?
+	->method declared without any body. (within an) inside the abstract class is called abstract method. 
+
+when used for abstract class and method?
+-->an abstract class is used when you want to define common behavior but prevent direct instantiation.
+-->Abstract methods must be implemented by subclasses, ensuring consistent structure while allowing different implementations.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is interface?
+	->if i want to achieve the 100% abstraction we go to Interface
+	->because interface have only abstract method
+	->also it support multiple inheritance using "implements" keyword.
+why?
+->it is highly secure! mostly used for banking application
+->class can inherit more than 1 inherit 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is Encapsulation?
+	->Encapsulation is the bindles the data(variable) and methods into a single unit is called Encapsulation.
+	->Encapsulation provide data hiding.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is Polymorphism
+	->poly means many, morphism->way or form. it so solving the problems in many-way so this polymorphism in general way.
+	->In technically object to perform a single action in different-way
+	->it is used for code reusability
+there two type of polymorphism
+	->Run time polymorphism(overriding)
+	->Compile time polymorphism(overloading)
+ 
+Compile time polymorphism(overloading)
+->method name is same signature is different-(no of params,order params,type params)
+//->One class there are multiple function with same name but different parameter. so that function said to be overloading
+//->it run a program in compile time
+
+Run time polymorphism(overriding)
+->method name is same and implementation is different.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+what is Inheritance?
+	->Inheritance is extending the properties from one class to another class with the help of "extends" keyword is called Inheritance.
+	->It mainly used for code reusability.
+There are 5 type of Inheritance
+	->Single Inheritance.(A child class inherits from a single parent class)
+	->Multiple Inheritance.(Java not support)(one child has two parent)
+	->Multilevel Inheritance.(A chain of inheritance a class inherits from another class and then a third class inherits from that second class)
+	->hierarchical Inheritance.(A single parent class has multiple child classes)
+	->Hybrid Inheritance.(A combination of two or more types of inheritance)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
