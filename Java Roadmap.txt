@@ -1,0 +1,12 @@
+Java Roadmap
+============
+	1.Java-8
+	2.generics,garage collections
+	3.File handling
+	4.multithreading
+	5.collections
+	6.Execption handling, package, wrapper class
+	7.oops(pillars)
+	8.oops(class,object,construtor,variable)
+	9.string,stringbuffer,stringBuilder,Array
+	10.java basics
