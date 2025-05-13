@@ -1,0 +1,113 @@
+Java 8 functions
+================
+Java8 features main aim is,
+	1. To simplify Program. that means simple syntax.
+	2. To write code readable and concise code.
+	3. To enable the functional program 
+In java8 features we have,
+->Lamba Expression.
+->stream API
+->Data & Time API
+->Functional Interface
+->Method reference and constructor reference
+->optional class
+->Default & static methods in interface
+->collectors
+
+1) What is Lamba Expression?
+Lamba expression is just an anonymous function. It is mainly used to implement functional interfaces. we can write the function without modifier, without name, without return type.
+why to use the Lamba expression
+	1.To write the code readable and concise code.
+	2.To write the functional program in java(because basically java is object orientend program, so we can write the code in functional program also.)
+
+2)stream API
+It is process the collections(likes list, sets) in a functional and efficient way.
+it is used to process collections of objects with the functional style of coding using the lambda expression.
+Stream
+A stream is a sequence of element supporting the functional-style operation such as filter,map,sort and collect
+-we don't need manual interation
+why we go to this
+Doesn’t modify the original collection
+Supports parallel processing
+to write code readable and concise
+filter() – selects elements based on condition
+map() – transforms each element
+sorted() – sorts the stream
+collect() – collect the results into create the new collection
+
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class StreamExample {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("ravi", "rajesh", "john", "ram", "alex");
+
+        // Stream operations: filter, map, sort, collect
+        List<String> result = names.stream()
+            .filter(name -> name.startsWith("r"))             // Filter names starting with 'r'
+            .map(name -> name.toUpperCase())                  // Convert to uppercase
+            .sorted()                                         // Sort alphabetically
+            .collect(Collectors.toList());                    // Collect results to a List
+
+        System.out.println("Processed Names: " + result);
+    }
+}
+
+3)Data & Time API
+a set of classes for date-time conversions, including timelines and advanced programming.
+Just It imports the java.time package, and this package contains LocalDate, LocalTime, LocalDateTime, ZonedDateTime, and other classes.
+it is overcome the drawback of old api
+->not thread safe->thread safe,we can used in multithread also
+->poor design(mutability, confusing method names)
+->very less operation->we have more ooperation
+
+import java.time.*;
+
+public class Example {
+    public static void main(String[] args) {
+        LocalDate date = LocalDate.now();
+        LocalTime time = LocalTime.now();
+        LocalDateTime dateTime = LocalDateTime.now();
+
+        System.out.println("Date: " + date);
+        System.out.println("Time: " + time);
+        System.out.println("Date & Time: " + dateTime);
+    }
+}
+
+A functional interface in Java is an interface that contains only one abstract method. Functional interfaces can have multiple default or static methods, but only one abstract method. Runnable, ActionListener, and Comparator are common examples of Java functional interfaces. 
+Runnable: This interface only contains the run() method.
+Comparable: This interface only contains the compareTo() method.
+ActionListener: This interface only contains the actionPerformed() method.
+Callable: This interface only contains the call() method.
+Types of Functional Interfaces in Java
+Consumer
+Predicate
+Function 
+Supplier
+@FunctionalInterface annotation :
+its not mandatory..if we use this annotation before interface then it will restrict  the user to take extra methods with in the functional interface.
+
+Method reference and constructor reference
+Java 8 introduced Method Reference and Constructor Reference as shorthand ways to use lambda expressions more cleanly and concisely.
+Method reference(it short way to call the method using ::)
+Method reference is used to refer to a method of a class or object without executing it. It works only when the lambda expression is calling an existing method.
+
+Constructor Reference(class::new)
+Constructor reference is used to refer to a constructor of a class. It’s used when we want to create a new object via lambda.
+Default & static methods in interface
+allowing them to contain some implementation logic without breaking existing implementations.
+To add new functionality to interfaces without breaking old code.
+Enables better support for functional programming.
+
+Default Method in Interface
+Introduced to allow method implementations in interfaces.
+Helps in interface evolution without affecting implementing classes.
+Uses the keyword default.
+
+Static Method in Interface
+Belongs to the interface, not the instance.
+Cannot be overridden.
+
+The Optional class is a container object used to represent a value that may or may not be present.It helps avoid NullPointerException or Prevents null pointer exceptions
+Makes code more readable and safe

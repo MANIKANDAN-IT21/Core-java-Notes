@@ -1,0 +1,71 @@
+Generics
+========
+What is Generics?
+-----------------
+Java that allows developers to define classes, interfaces, and methods with type parameters. This means you can write a single piece of code that works with different data types.
+Advantages of Generics
+----------------------
+->Eliminates Type Casting( The compiler automatically handles casting)
+->Type Safety(Avoid ClassCastException in runtime)
+->Code Reusability
+Types of Generics
+-----------------
+	1)Class Generics 
+	2)Method Generics
+	//3)Interface Generics
+
+Class Generics Code:
+-------------------
+class Pass <T>{
+    T mani;
+    public  Pass(T mani) {
+        this.mani = mani;
+    }
+
+    public void print() {
+        System.out.println(mani);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Pass name = new Pass(2);
+        name.print();
+    }
+}
+
+Method Generics Code:
+--------------------
+class Pass {
+
+    public <T> void print(T mani) {
+        System.out.println(mani);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Pass name = new Pass();
+        name.print("mani");
+         name.print(10);
+    }
+}
+WildCard in generics
+--------------------
+-Wildcard (?) in Java Generics represents an unknown type.
+-It allows methods or classes to work flexibly with different types
+Type of WildCard
+----------------
+1)upperBounded<? extends T>
+2)LowerBounded<? super T>
+3)UnBounded<?>
+
+-don't worry about type caste compiler take the part
+Ex: if we have two methods that perform the same operation. one is Intergesort(), charsort()->but on different data types like int[] and char[]. Generics allow us to write a single method that works for any object type (like Integer, Character, etc.)
+Generics don’t work with primitives (int, char), we use wrapper classes like Integer and Character.
+
+
+doubt
+-----
+wild card
+type of wildcars

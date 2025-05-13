@@ -1,0 +1,34 @@
+Wrapper class
+=============
+In Java, wrapper classes are used to wrap primitive data types into objects.
+because in collection concept we can't use the primitive datatype
+->Typecasting(we can convert into one primitive type into another primitive type)
+->Parsing(we can converting the string into primitive datatype)
+and also we have Autoboxing and UnBoxing concept in java
+so we can easily convert the object to datatype and datatype to  object by automatically.
+
+Example
+======
+int a=10;//insert
+Integer b=Integer.valueOf(10);//insert
+--------------------------------
+Integer c=Integer.valueOf(a);//boxing
+int d=b.intValue();//unboxing
+--------------------------
+Interger e=10//Autoboxing
+int f=e;//Autounboxing
+
+Parsing (Converting String to Primitive)
+========================================
+String str = "123";
+int parsedInt = Integer.parseInt(str);//Double.parseDouble()
+
+Autoboxing & Unboxing
+=====================
+int primitiveInt = 10;
+Integer wrapperInt = primitiveInt;  // Autoboxing: int to Integer
+int unboxedInt = wrapperInt;  // Unboxing: Integer to int
+
+Int-->Integer
+double->Double
+boolean->Boolean
